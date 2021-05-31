@@ -15,6 +15,6 @@ jobs:
     steps:
       - name: baba
         run: |
-          [ -z "${{ github.event.inputs.actor }}" ] && namespace=$GITHUB_ACTOR || namespace="${{ github.event.inputs.actor }}"
+          [ -z ${{ github.event.inputs.actor }} ] && namespace=$GITHUB_ACTOR || namespace=${{ github.event.inputs.actor }}
           echo $namespace
         
