@@ -13,6 +13,8 @@ jobs:
   update_release_draft:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        [ -z "${{ github.event.inputs.actor }}" ] && namespace=$GITHUB_ACTOR || namespace="${{ github.event.inputs.actor }}"
-        echo $namespace
+      - name: baba
+        run: |
+          [ -z "${{ github.event.inputs.actor }}" ] && namespace=$GITHUB_ACTOR || namespace="${{ github.event.inputs.actor }}"
+          echo $namespace
+        
