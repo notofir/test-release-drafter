@@ -5,7 +5,7 @@ on:
     inputs:
       m:
         description: "act!"
-        default: "value"
+        default: "value2"
         required: true
 
 jobs:
