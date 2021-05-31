@@ -16,5 +16,5 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Test
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.WORKFLOW_DISPATCH }}
           inputs: '{ "actor": "${{ github.event.inputs.m }}"}'
