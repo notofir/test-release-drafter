@@ -5,7 +5,7 @@ on:
     inputs:
       m:
         description: "act!"
-        default: "value2"
+        default: "value3"
         required: true
 
 jobs:
@@ -16,5 +16,5 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Test
-          token: ${{ secrets.WORKFLOW_DISPATCH2 }}
+          token: ${{ secrets.WORKFLOW_DISPATCH3 }}
           inputs: '{ "actor": "${{ github.event.inputs.m }}"}'
