@@ -6,7 +6,7 @@ on:
     inputs:
       actor:
         description: "act!"
-        default: "$GITHUB_ACTOR"
+        default: ""
         required: true
 
 jobs:
