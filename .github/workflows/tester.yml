@@ -6,7 +6,6 @@ on:
       actor:
         description: "act!"
           #default: ""
-        required: false
 
 jobs:
   update_release_draft:
