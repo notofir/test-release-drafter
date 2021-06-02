@@ -5,8 +5,8 @@ on:
     inputs:
       actor:
         description: "act!"
-        default: ""
-        required: true
+          #default: ""
+        required: false
 
 jobs:
   update_release_draft:
@@ -14,6 +14,7 @@ jobs:
     steps:
       - name: baba
         run: |
+          echo ${{ github.event.inputs.actor }}
           [ -z ${{ github.event.inputs.actor }} ] && namespace=$GITHUB_ACTOR || namespace=${{ github.event.inputs.actor }}
           echo $namespace
         
